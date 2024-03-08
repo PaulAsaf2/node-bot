@@ -24,3 +24,9 @@ app.post('/webapp-data', async (req, res) => {
 })
 
 bot.start()
+
+const PORT = 8000;
+
+app.listen(PORT, () => {
+  console.log('Server started on PORT ' + PORT);
+})
