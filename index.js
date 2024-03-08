@@ -23,6 +23,12 @@ app.post('/webapp-data', async (req, res) => {
   return res.status(200).send({ message: 'Succeed' })
 })
 
+app.get('/good-wind', (req, res) => {
+  res.status(200).send({
+    message: 'Он придёт. Он будет добрый, ласковый.'
+  })
+})
+
 bot.start()
 
 const PORT = 8000;
